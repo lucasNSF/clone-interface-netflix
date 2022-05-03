@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300;400;500;600;700&display=swap");
+
+/* Configurações da página */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.8%;
+  font-family: "Radio Canada", sans-serif;
+}
+
+body {
+  background-color: #141414;
+}
+
+/* Logo, Menu de Navegação e de Interação com o Usuário */
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  background-color: #0c0c0c;
+  align-items: center;
+  padding: 1.5rem 0;
+  z-index: 10;
+}
+
+.netflix-logo {
+  max-width: 110px;
+  max-height: 110px;
+  margin-left: 4vw;
+}
+
+.menu-bar ul {
+  display: flex;
+  margin-left: 3vw;
+}
+
+.menu-bar li {
+  margin-right: 2vw;
+  list-style: none;
+}
+
+.link {
+  color: #dedee5;
+  text-decoration: none;
+  font-size: 1.4rem;
+  transition: 0.3s;
+}
+
+.link:hover {
+  color: #757575;
+}
+
+.menu-user {
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+  margin-right: 4vw;
+}
+
+.menu-user i {
+  color: white;
+}
+
+.profile-section img {
+  border-radius: 5px;
+}
+
+div.container-bell {
+  position: relative;
+  margin: 0 2vw 0 2vw;
+}
+
+div.container-bell div.notifications-circle {
+  position: absolute;
+  top: -11px;
+  right: -8px;
+  background-color: #b91a09;
+  height: 16px;
+  width: 16px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.notifications-circle p {
+  color: white;
+  font-weight: bold;
+}
+
+#search-icon {
+  margin-right: 2vw;
+}
+
+.menu-user > *:hover {
+  cursor: pointer;
+}
+
+#menu-user-bar {
+  display: none;
+  color: white;
+}
+
+#menu-user-bar:hover {
+  cursor: pointer;
+}
+
+/* Sessão de Filme em Destaque */
+
+section.movie-preview {
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3) 80%,  rgba(0, 0, 0, 0.5)),
+    url("../images/peaky-blinders-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+}
+
+div.mp-info {
+  margin-left: 4vw;
+  padding-top: 8vh;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.mp-title {
+  color: white;
+  font-size: 4rem;
+}
+
+div.top-movie {
+  display: flex;
+  align-items: center;
+  color: white;
+  margin: 2vh 0;
+}
+
+.top-movie div.top-square {
+  background-color: #e52213;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+div.top-square p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.top-text {
+  font-size: 2rem;
+  margin-left: 1vw;
+  font-weight: 500;
+  text-shadow: 3px 2px 1px #000;
+}
+
+.mp-description {
+  color: white;
+  font-size: 1.5rem;
+  text-align: justify;
+  line-height: 2.2rem;
+  width: 80%;
+  margin: 3vh 0;
+}
+
+div.mp-buttons {
+  display: flex;
+  margin-top: 6vh;
+}
+
+div.mp-buttons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button.play-movie {
+  padding: 1.5rem;
+  width: 120px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 1%;
+}
+
+div.mp-buttons > *:hover {
+  cursor: pointer;
+  opacity: .9;
+}
+
+button.more-info {
+  padding: 1.5rem;
+  width: 200px;
+  border: none;
+  border-radius: 5px;
+  background-color: #67747f;
+  color: white;
+}
+
+.more-info p {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-left: 7%;
+}
+
+.play-movie p {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-left: 10%;
+}
+
+.movie-preview h3 {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  font-size: 2rem;
+  margin-left: 4vw;
+  font-weight: 500;
+}
+
+/* Configurando tamanho dos filmes exibidos */
+
+.movie {
+  max-width: 70%;
+  max-height: 70%;
+  display: block;
+}
+
+.movie:hover {
+  cursor: pointer;
+  opacity: .7;
+}
+
+/* Sessão de Últimos 12 Lançamentos */
+
+.carousel-movies {
+  margin-top: 1vh;
+}

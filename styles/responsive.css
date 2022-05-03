@@ -1,0 +1,75 @@
+@media screen and (max-width: 798px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .mp-title {
+    font-size: 3rem;
+  }
+
+  .menu-user {
+    display: none;
+  }
+
+  #menu-user-bar {
+    position: absolute;
+    right: 0;
+    display: block;
+    margin-right: 4vw;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  header {
+    flex-direction: column;
+  }
+
+  .menu-bar {
+    margin-top: 2vh;
+  }
+
+  #menu-user-bar {
+    top: 50%;
+  }
+
+  .mp-buttons {
+    flex-direction: column;
+  }
+
+  .play-movie p {
+    margin-left: 7%;
+  }
+
+  .mp-buttons button {
+    width: 80%;
+    margin-bottom: 2vh;
+  }
+
+  .movie-preview h3 {
+    position: relative;
+    margin-top: 2vh;
+  }
+
+  div.carousel-movies {
+    margin-top: 6vh;
+  }
+}
+
+@media screen and (max-width: 438px) {
+  html {
+    font-size: 50%;
+  }
+
+  .top-movie div.top-square {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  section.movie-preview {
+    padding-bottom: 103vh;
+  }
+}
